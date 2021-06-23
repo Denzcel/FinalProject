@@ -1,0 +1,129 @@
+@charset "utf-8";
+/*
+   FNCS Layout Style Sheet
+
+   Filename: fn_styles.css
+   
+*/
+
+
+/* HTML and Body Styles */
+
+html {
+   background: white;
+   font-family: Verdana, Geneva, sans-serif;
+   font-size: 12px;
+}
+
+body {
+   position: relative;
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-flow: row wrap;
+   flex-flow: row wrap;   
+   background: white;
+   max-width: 1024px;
+   min-width: 420px;
+   margin: 0px auto;
+   border: 1px solid rgb(221, 221, 221);
+}
+
+body > header > section#bubbleBox {
+   display: block;
+   width: 1024px;
+   height: 500px;
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   z-index: 1;
+}
+
+p {
+   font-size: 1.2em;
+   line-height: 1.4em;
+   margin: 15px;
+}
+
+/* Header Styles */
+
+body > header {
+   width: 100%;
+}
+
+body > header > img#imgLogo {
+   display: block;
+   width: 100%;
+}
+
+
+/* Middle Navigation Styles */
+
+nav#middleList ul {
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-flow: row nowrap;
+   flex-flow: row nowrap;
+   -webkit-justify-content: center;
+   justify-content: center;
+   -webkit-align-items: center;
+   align-items: center;
+   background-color: rgb(240, 65, 65);
+   height: 40px;
+}
+   
+nav#middleList ul li {
+   -webkit-flex: 0 1 80px;
+   flex: 0 1 80px;   
+   margin: 20px;
+}
+
+nav#middleList ul li a {
+   color: white;
+   display: block;
+   font-size: 1.2em;
+   text-align: center;
+   padding: 50% 0%;
+}
+
+nav#middleList ul li a:hover, nav#middleList ul li a:active {
+   color: rgba(255, 255, 255, 0.9);
+   text-shadow: 0px 0px 2px black, 0px 0px 8px black;
+}
+
+
+/* Section Styles */
+
+section {
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-flow: row wrap;
+   flex-flow: row wrap;   
+   -webkit-align-items: center;
+   align-items: center;
+   margin: 20px 40px;
+}
+
+section h1 {
+   font-size: 2.9em;
+   font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+   color: rgb(159, 31, 7);
+   letter-spacing: 0.1em;
+   margin: 20px 0px;
+   width: 100%;
+}
+
+
+/* Footer Styles */
+
+footer {
+   width: 100%;
+}
+
+footer p {
+   color: rgb(211, 211, 211);
+   font-size: 0.9em;
+   text-align: center;
+   background-color: rgb(163, 41, 41);
+   margin: 0px;
+   padding: 10px 0px;
+}
